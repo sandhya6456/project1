@@ -54,7 +54,10 @@
                 </div>
                 
                 <div class="stat">
-                    <p>Completed + Ongoing<h2>90+</h2><b>animation type</b></p>
+                    <p>Completed + Ongoing <h2 id="counter">0</h2><b> animation type</b></p>
+
+
+
                 </div>
             </div>
             <br>
@@ -148,8 +151,27 @@
             </ul>
         </div>
     </footer>
-    
-    
+    <script>
+        window.onload = function () {
+            let counter = document.getElementById('counter');
+            let current = 1;
+            let target = 90;
+            
+            function incrementNumber() {
+              if (current <= target) {
+                counter.innerText = current;
+                current++;
+                setTimeout(incrementNumber, 20);  // Adjust the speed of the increment here
+              } else {
+                counter.innerText = current - 1 + "+"; // Append "+" after reaching 90
+              }
+            }
+          
+            incrementNumber();
+          };
+          
+    </script>
+      
     
     
     
