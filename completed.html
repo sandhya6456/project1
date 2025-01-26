@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Projects</title>
+    <link rel="stylesheet" href="stylecom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo-Photoroom.png" alt="Logo" width="210px">
+        </div>
+        <ul id="menu">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+            <li>
+                <a href="#">Projects</a>
+                <ul class="dropdown">
+                    <li><a href="completed.html">Completed</a></li>
+                    <li><a href="ongoing.html">Ongoing</a></li>
+                </ul>
+            </li>
+            <li><a href="clients.html">Our Clients</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="portfolio">
+        <h1>Completed Projects</h1>
+        <p>Our portfolio reflects the diversity of our expertise, from luxury villas to large-scale commercial and institutional developments.</p>
+    
+        <div class="category">
+            <h2><i class="fas fa-home"></i> Residential and Villa Projects:</h2>
+            <ul>
+                <li>Over 50 luxury villas completed.</li>
+                <li>1.U.K. Residency – A landmark residential project in Moodbidri.</li>
+            </ul>
+        </div>
+    
+        <div class="category">
+            <h2><i class="fas fa-building"></i> Commercial and Institutional Projects:</h2>
+            <ul>
+                <li>1.Bharath Auto Cars Pvt Ltd Showroom, Moodbidri.</li>
+                <li>2.M.H. Heights – 9-floor mixed-use building in Melkar.</li>
+                <li>3.Municipality Commercial Project, Moodbidri (1.80 lakh sq. ft.).</li>
+                <li>4.Coorg Center Commercial Project, Madikeri (2 lakh sq. ft.).</li>
+                <li>5.Shafcon Mart, Bhatkal.</li>
+                <li>6.Vibrant College Boys Hostel, Moodbidri.</li>
+                <li>7.Vidyodaya School and Hostel, Venoor.</li>
+            </ul>
+        </div>
+    
+        <div class="category">
+            <h2><i class="fas fa-church"></i> Religious and Cultural Projects:</h2>
+            <ul>
+                <li>1.Annpoorneshwari Temple, Hosanadu Kodyadka.</li>
+                <li>2.Veera Maruthi Temple, Kotebagilu, Moodbidri.</li>
+                <li>3.Shadi Mahal, B.C. Road.</li>
+                <li>4.Cecilio Palace, Shirva, Udupi.</li>
+            </ul>
+        </div>
+    
+        <div class="category">
+            <h2><i class="fas fa-cogs"></i> Builder and Developer Projects:</h2>
+            <ul>
+                <li>1.I Care Builders and Developers: Palace Enclave, Divya Sagar Palace, Vincent Palace, Nisarga Palace, Chaya Palace, Church Gate Palace, Bethlehem Star Project, Serravo Palace.</li>
+                <li>2.Manish Builders and Developers: Campus View Project.</li>
+                <li>3.Blue Bird Builders and Developers: Two signature projects in Moodbidri.</li>
+                <li>4.Alangara AACOI Builders: AACOI Classic Building, AACOI Crystal Building.</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

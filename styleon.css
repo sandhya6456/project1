@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 2px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .logo img {
+    max-height: 60px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.navbar ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+
+/* Hamburger Menu */
+.navbar .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h5 {
+        left: -33%; /* Move further left on smaller screens */
+    }
+    .navbar ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        padding: 12px 0;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .stat h2 {
+        font-size: 1.5rem;
+    }
+
+    .stat p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ongoing Projects Section */
+.ongoing-projects {
+    padding: 20px;
+    background: url('c1.jpg') no-repeat center center/cover; /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff; /* Make text white for contrast */
+}
+
+.ongoing-projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.ongoing-projects p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.ongoing-class {
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ongoing-class h2 {
+    font-size: 2rem;
+    color: #ffd700; /* Gold color for icons and headings */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.ongoing-class h2 i {
+    margin-right: 10px; /* Space between the icon and the text */
+    color: #ffd700; /* Icon color matching the heading */
+}
+
+.ongoing-class ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ongoing-class ul li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.ongoing-class ul li em {
+    font-style: italic;
+    color: #ffdb4d; /* Highlight for completion timeline */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ongoing-class h2 {
+        font-size: 1.6rem;
+    }
+
+    .ongoing-class ul li {
+        font-size: 1rem;
+    }
+}

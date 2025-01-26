@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo-Photoroom.png" alt="Logo" width="210px">
+        </div>
+        <ul id="menu">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+            <li>
+                <a href="#">Projects</a>
+                <ul class="dropdown">
+                    <li><a href="completed.html">Completed</a></li>
+                    <li><a href="ongoing.html">Ongoing</a></li>
+                </ul>
+            </li>
+            <li><a href="clients.html">Our Clients</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="ongoing-projects">
+        <h1>Our Ongoing Projects</h1>
+        <p>Our current projects showcase our ability to handle large-scale developments with efficiency and expertise:</p>
+    
+        <div class="ongoing-class">
+            <h2><i class="fas fa-school"></i> Creative College, Karkala:</h2>
+            <ul>
+                <li>Academic Block (56,000 sq. ft).</li>
+                <li>Girls’ Hostel (1 lakh sq. ft).</li>
+                <li><em>Completion in 6 months</em></li>
+            </ul>
+        </div>
+    
+        <div class="ongoing-class">
+            <h2><i class="fas fa-university"></i> Sujnan Educational Trust, Kundapura:</h2>
+            <ul>
+                <li>Hostel Building (60,000 sq. ft).</li>
+                <li>College Building (70,000 sq. ft).</li>
+                <li><em>Completion in 6 months</em></li>
+            </ul>
+        </div>
+    
+        <div class="ongoing-class">
+            <h2><i class="fas fa-building"></i> Modern Builders and Developers:</h2>
+            <ul>
+                <li>Galaxy Commercial & Residential Building (25,000 sq. ft, Moodbidri).</li>
+            </ul>
+        </div>
+    
+        <div class="ongoing-class">
+            <h2><i class="fas fa-user-friends"></i> Al Birr International School:</h2>
+            <ul>
+                <li>Located in Moodbidri (Trustee Partner).</li>
+            </ul>
+        </div>
+    
+        <div class="ongoing-class">
+            <h2><i class="fas fa-home"></i> Five Luxury Bungalows:</h2>
+            <ul>
+                <li>Located in Moodbidri.</li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
