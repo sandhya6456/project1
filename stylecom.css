@@ -189,3 +189,188 @@ body {
         font-size: 1rem;
     }
 }
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    background-color: #20232e;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.section img {
+    max-width: 100px;
+    margin: 10px auto;
+    display: block;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+    color: #FFD700;
+}
+
+.explore-section ul {
+    padding-left: 0; /* Remove unnecessary padding */
+    margin: 0; /* Remove margin to eliminate gaps */
+    list-style-position: outside;
+     /* Ensure bullets align outside the text */
+}
+ul li a {
+    text-decoration: none; /* Remove underline from the link */
+    color: white; /* Set all links' color to white */
+    font-size: 1rem; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+.explore-section ul li {
+    text-decoration: none; /* Remove underline from the link */
+    color: #ffffff; /* Set the color of the link */
+    font-size: 1rem;}
+
+
+.contact-section h1 {
+    text-align: center;
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-section {
+        text-align: center; /* Center align for mobile */
+        align-items: center;
+    }
+
+    .contact-item {
+        font-size: 15px;
+        flex-direction: column; /* Stack icon and text vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .contact-item i {
+        margin-bottom: 5px; /* Add space below the icon */
+    }
+    .explore-section ul {
+        list-style-type: none; /* Ensure no bullet points */
+    }
+
+    .explore-section ul li {
+        margin: 10px 0; /* Add spacing between list items */
+        padding: 0; /* Remove padding for cleaner alignment */
+        text-align: center; /* Align text to the center */
+    }
+    
+}
+
+.footer {
+    background:linear-gradient(45deg, #d8684e, #eebf58);
+    color: white; /* Dark background for the footer */
+    color: white;
+    padding: 9px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    }
+    
+    /* Footer Content Styling */
+    .footer .footer-content {
+    align-items: center;
+    }
+    
+    /* Footer Item Styling */
+    .footer-item {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    }
+    
+    .footer-item a {
+    color: white;
+    text-decoration: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* Responsive Design for Footer */
+    @media (max-width: 767px) {
+    .footer .contact-info {
+    font-size: 0.9rem;
+    }
+    
+    .footer .footer-content {
+    flex-direction: column; /* Stack the footer content vertically on mobile */
+    align-items: center;
+    text-align: center;
+    }
+    
+    .footer .social-media-links {
+    margin-top: 10px;
+    justify-content: center; /* Centers the links on smaller screens */
+    }
+    
+    .footer .social-media-links li {
+    margin-left: 10px;
+    }
+    
+    .footer-item {
+    font-size: 0.8rem; /* Smaller font size for mobile */
+    margin-bottom: 8px; /* Slightly reduced spacing */
+    }
+    
+    .footer .social-media-links i {
+    font-size: 1.2rem; /* Smaller icon size for mobile */
+    }
+    }
+    
+    
